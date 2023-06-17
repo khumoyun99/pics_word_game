@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pics_word_game/screens/game_screen.dart';
 
 import '../utils/my_methods.dart';
+import 'first_screen.dart';
 
 class LevelScreen extends StatefulWidget {
   @override
@@ -15,6 +16,11 @@ class _LevelScreenState extends State<LevelScreen> {
         appBar: AppBar(
           title: Text("Chose level"),
           backgroundColor: getColorFormHex("#111622"),
+          leading: BackButton(
+            onPressed: (){
+              Navigator.push(context,MaterialPageRoute(builder: (context)=>FirstScreen()));
+            },
+          ),
         ),
         body: Container(
           color: getColorFormHex("0F131B"),

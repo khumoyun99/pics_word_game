@@ -26,6 +26,9 @@ flutter:
 
   assets:
     - assets/
+    - assets/3_words/
+    - assets/4_words/
+    - assets/5_words/
 
 
 #  fonts:
